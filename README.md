@@ -17,8 +17,8 @@ Joystick X and Y: -180 to 180 for both
 Rotation Buttons: 0 or 1
 
 Notes:
-- lower baudrate for esp32cam to arduino transmission seems more robust with no functional loss.
-- do not send uodate over serial in main loop for esp firmware: causes issues with data segmentation probably because it is too fast.
+- lower baudrate for esp32cam to arduino transmission (softwareserial read on arduino) seems more robust with no functional loss.
+- do not send update over serial in main loop for esp firmware: causes issues with data segmentation probably because it is too fast.
 - power esp32cam with external source instead of Uno to avoid brownout
 
  Enjoy.
